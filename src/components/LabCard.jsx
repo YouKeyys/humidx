@@ -11,50 +11,40 @@ function LabCard() {
       <div className="lab-card-body">
 
         {/* Temperature Block */}
-        <div 
-          className="data-block" 
-          style={{ background: "linear-gradient(to right, #2A5176, #6D7D8B)" }}
-        >
+        <div className="data-block" style={{ gridColumn: "span 1", background: "linear-gradient(to right, #1F2B88, #464F98)" }}>
           <span className="data-label">Temperature</span>
           <span className="data-value temperature">21.48°C</span>
           <span className="data-threshold">Threshold: 18-25°C</span>
         </div>
 
-        {/* Min/Max Block */}
-        <div 
-          className="data-block min-max-block" 
-          style={{ background: "linear-gradient(to right, #718096, #A0AEC0)" }}
-        >
-          <div className="min-max-row">
-            <span>Min</span>
-            <span>17.39°C</span>
-            <span>45%RH</span>
+        {/* Min Block */}
+        <div className="data-block min-max-separated" style={{ gridColumn: "span 1", background: "linear-gradient(to right, #437C8A, #FFFFFF)" }}>
+          <div className="min-max-row"><span>Min</span></div>
+          <div className="min-max-values">
+            <span className="data-value temperature">19.48°C</span>
+            <span className="data-value humidity-dark">45%RH</span>
           </div>
-          <div className="min-max-row">
-            <span>Max</span>
-            <span>24.10°C</span>
-            <span>59%RH</span>
+        </div>
+
+        {/* Max Block */}
+        <div className="data-block min-max-separated" style={{ gridColumn: "span 1", background: "linear-gradient(to right, #437C8A, #FFFFFF)" }}>
+          <div className="min-max-row"><span>Max</span></div>
+          <div className="min-max-values">
+            <span className="data-value temperature">23.48°C</span>
+            <span className="data-value humidity-dark">59%RH</span>
           </div>
         </div>
 
         {/* Humidity Block */}
-        <div 
-          className="data-block" 
-          style={{ background: "linear-gradient(to right, #63B3ED, #90CDF4)" }}
-        >
+        <div className="data-block" style={{ gridColumn: "span 1", background: "linear-gradient(to right, #255919, #438A51)" }}>
           <span className="data-label">Humidity</span>
           <span className="data-value humidity">52%RH</span>
           <span className="data-threshold">Threshold: 30-70%RH</span>
         </div>
 
         {/* Graph Block */}
-        <div 
-          className="data-block graph-block" 
-          style={{ background: "linear-gradient(to right, #4A5568, #2D3748)" }}
-        >
-          <div className="graph-placeholder">
-            [GRAFIK]
-          </div>
+        <div className="data-block graph-block" style={{ gridColumn: "span 2", background: "linear-gradient(to right, #FFFFFF, #EFE376)" }}>
+          <div className="graph-placeholder">[GRAFIK]</div>
         </div>
 
       </div>
