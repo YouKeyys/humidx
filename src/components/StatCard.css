@@ -1,48 +1,78 @@
 .stat-card {
-  /* Tampilan kotak */
-  background-color: rgb(249, 249, 249);
-  border-radius: 8px; /* Membuat sudut melengkung */
+  background-color: white;
+  border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan halus */
-  
-  /* Ini penting agar kotak bisa mengisi ruang */
-  flex: 1; /* Membuat semua kartu punya lebar yang sama */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  min-width: 180px; /* Essential for responsiveness */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-header {
   display: flex;
-  justify-content: space-between; /* Judul di kiri, icon di kanan */
-  align-items: center;
-  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
 .card-title {
   font-size: 14px;
-  color: #555;
+  color: #71717a; /* Greyish text from your picture */
+  max-width: 70%;
 }
 
-.card-icon {
-  font-size: 24px;
+/* Icon Containers */
+.icon {
+  width: 24px;
+  height: 24px;
 }
 
-.card-body {
-  /* Biarkan ini untuk sekarang, kita akan rapikan lagi */
-  
+.title-group {
+  display: flex;
+  flex-direction: column;
 }
+
+.card-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 4px;
+}
+
+.icon.blue { color: #3b82f6; background: #dbeafe; padding: 6px; border-radius: 8px; }
+.icon.orange { color: #f97316; background: #ffedd5; padding: 6px; border-radius: 8px; }
+.icon.green { color: #22c55e; background: #dcfce7; padding: 6px; border-radius: 8px; }
+.icon.red { color: #ef4444; background: #fee2e2; padding: 6px; border-radius: 8px; }
+.icon.yellow { color: #b45309; background: #fef3c7; padding: 6px; border-radius: 8px; } 
 
 .card-value {
-  display: block; /* Membuat angka ada di baris baru */
-  font-size: 28px;
-  font-weight: bold;
-  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  color: #18181b;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .card-badge {
-  /* Ini adalah label "5 online" */
-  background-color: #e6f7ec; /* Hijau muda */
-  color: #008a2e; /* Hijau tua */
   padding: 2px 8px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 500;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Badge variants */
+.card-badge.green { background-color: #dcfce7; color: #166534; }
+.card-badge.red { background-color: #991b1b; color: white; }
+
+.card-trend {
+  font-size: 11px;
+  color: #a1a1aa;
 }
