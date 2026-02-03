@@ -1,0 +1,22 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Kita pindahkan style body dari App.css ke sini, 
+   karena ini adalah style global 
+*/
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #2A5176 0%,
+    #6D7D8B 100%
+  );
+}

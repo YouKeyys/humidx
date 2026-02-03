@@ -1,0 +1,48 @@
+.stat-card {
+  /* Tampilan kotak */
+  background-color: rgb(249, 249, 249);
+  border-radius: 8px; /* Membuat sudut melengkung */
+  padding: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Bayangan halus */
+  
+  /* Ini penting agar kotak bisa mengisi ruang */
+  flex: 1; /* Membuat semua kartu punya lebar yang sama */
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between; /* Judul di kiri, icon di kanan */
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #555;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-body {
+  /* Biarkan ini untuk sekarang, kita akan rapikan lagi */
+  
+}
+
+.card-value {
+  display: block; /* Membuat angka ada di baris baru */
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-badge {
+  /* Ini adalah label "5 online" */
+  background-color: #e6f7ec; /* Hijau muda */
+  color: #008a2e; /* Hijau tua */
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+}

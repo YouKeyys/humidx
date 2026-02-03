@@ -1,0 +1,22 @@
+.navbar-component {
+  /* Ini akan membuat judul di kiri dan tombol di kanan */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 24px;
+  color: #333;
+  margin: 0; /* Hapus margin default dari h1 */
+}
+
+.navbar-login-button {
+  background-color: #4676C9;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}

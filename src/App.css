@@ -1,0 +1,29 @@
+.dashboard-container {
+  /* Biarkan ini kosong untuk saat ini */
+}
+
+.top-navbar {
+  background-color: rgb(250, 250, 250);
+  padding: 16px 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.129);
+  margin-bottom: 24px;
+}
+
+.dashboard-content {
+  padding: 0 32px; /* Memberi jarak di kiri dan kanan */
+  max-width: 1400px;
+  margin: 0 auto; /* Menengahkan konten */
+}
+
+.stats-row {
+  display: flex;
+  gap: 30px; /* Memberi jarak antar kotak status */
+  margin-bottom: 24px;
+}
+
+.lab-grid {
+  display: grid;
+  /* Kita ingin 3 kolom */
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; /* Jarak antar kartu lab */
+} 
